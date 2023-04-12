@@ -8,34 +8,22 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/editor/editor.main.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <style>
-        #a {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 10;
-        }
-    </style>
     <style class="css"></style>
 </head>
 
 <body>
-    <div id="a">
-        <div class="row m-0 p-0">
-            <div class="col-4">
-                <div id="html" style="height:50vh;border:1px solid black;"></div>
-            </div>
-            <div class="col-4">
-                <div id="css" style="height:50vh;border:1px solid black;"></div>
-            </div>
-            <div class="col-4">
-                <div id="js" style="height:50vh;border:1px solid black;"></div>
-            </div>
-            <div class="col-12 border m-1 p-0 " style="height: 100vh; overflow-y: scroll;">
-                <div class="show-content  ">
-                </div>
+    <div class="overflow-hidden row m-0 p-0">
+        <div class="col-sm-4 col-12 px-1">
+            <div id="html" style="height:50vh;border:1px solid black;"></div>
+        </div>
+        <div class="col-sm-4 col-12 px-1">
+            <div id="css" style="height:50vh;border:1px solid black;"></div>
+        </div>
+        <div class="col-sm-4 col-12 px-1">
+            <div id="js" style="height:50vh;border:1px solid black;"></div>
+        </div>
+        <div class="col-12 border m-1 p-0 " style="min-height: 50vh; ">
+            <div class="show-content  ">
             </div>
         </div>
     </div>
