@@ -22,8 +22,8 @@
         <div class="col-sm-4 col-12 px-1">
             <div id="js" style="height:50vh;border:1px solid black;"></div>
         </div>
-        <div class="col-12 border m-1 p-0 " style="min-height: 50vh; ">
-            <div class="show-content  ">
+        <div class="col-12 border m-1 p-0  position-relative" style="min-height: 50vh; ">
+            <div class="show-content  position-relative ">
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
             let text = editorJs.getValue();
             var scriptTag = document.createElement("script");
             scriptTag.text = text;
-            document.getElementById('myScript').appendChild(scriptTag);
+            document.getElementById('myScript').innerHTML(scriptTag);
         });
     </script>
     <div id="myScript"></div>
