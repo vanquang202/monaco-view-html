@@ -64,14 +64,8 @@
         });
         editorJs.getModel().onDidChangeContent(function (event) {
             let text = editorJs.getValue();
-            var scriptTag = document.createElement("script");
-            scriptTag.text = text;
-
-            const list = document.getElementById("myScript");
-            while (list.hasChildNodes()) {
-                list.removeChild(list.firstChild);
-            }
-            document.getElementById('myScript').append(scriptTag);
+            eval(text);
+            return;
         });
     </script>
     <div id="myScript"></div>
